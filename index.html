@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alisha Electricity Billing System</title>
+<link rel="stylesheet" href="alisha.css">
+</head>
+<body>
+<div class="page">
+
+	<div class="image">
+		<img src="ali-img.png" alt="">
+	</div>
+	<div class="calculate">
+		<label for="prev">Previous meter: </label>
+		<input type="number" id="prev" value="0">
+		<br>
+		<label for="current">Current meter: </label>
+		<input type="number" id="current" value="0">
+		<br>
+		<label for="select amper">Select Ampere</label>
+		<select id="ampere">
+			<option value="5">5 Ampere</option>
+			<option value="15">15 Ampere</option>
+			<option value="30">30 Ampere</option>
+			<option value="60">60 Ampere</option>
+		</select>
+		<br> <br>
+		 <span id="adTotalCost"></span>  
+		<br><br>
+		 <span id="adConsumed"></span>
+		<br><br>
+		<input type="button" id="submit" onclick="adCalculate()" value="Calculate">
+	</div>
+</div>
+
+<div id="output"></div> 
+<script type="text/javascript" src="alisha.js"></script>
+</body>
+</html>
